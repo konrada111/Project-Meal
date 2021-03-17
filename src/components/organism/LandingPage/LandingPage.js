@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header, Wrapper, Paragraph } from './LandingPage.style';
-import { ButtonMore } from 'components/atoms/ButtonMore/ButtonMore';
+import { Header, Wrapper, Paragraph, ButtonMore } from './LandingPage.style';
 
 const LandingPage = () => {
   return (
