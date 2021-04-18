@@ -6,19 +6,21 @@ import { Input } from 'components/atoms/Input/Input';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  margin: 0 40px;
   justify-content: center;
+  align-items: center;
 
   ${Label} {
-    margin: 10px 0;
+    margin-right: 40px;
+    font-size: 15px;
   }
 `;
 
-const FormField = ({ value, onChange, label, name, id, type = 'text', ...props }) => {
+const FormField = ({ placeholder, value, onChange, label, name, id, type = 'text', ...props }) => {
   return (
     <Wrapper>
       <Label htmlFor={id}>{label}</Label>
-      <Input type={type} onChange={onChange} value={value} id={id} />
+      <Input type={type} placeholder={placeholder} onChange={onChange} value={value} id={id} />
     </Wrapper>
   );
 };
@@ -28,6 +30,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   type: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 export default FormField;
