@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Wrapper, Header, ButtonMore } from './RecipesLandingPage.style';
 
 const RecipesLandingPage = () => {
@@ -10,7 +9,5 @@ const RecipesLandingPage = () => {
     </Wrapper>
   );
 };
-
-RecipesLandingPage.propTypes = {};
 
 export default RecipesLandingPage;

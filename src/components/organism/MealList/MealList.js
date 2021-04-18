@@ -7,9 +7,10 @@ const MealList = ({ mealData: { meals, nutrients } }) => {
   return (
     <>
       <List>
-        <Item>Kalorie: {nutrients.calories}</Item>
-        <Item>Białko: {nutrients.protein}</Item>
-        <Item>Weglowodany: {nutrients.carbohydrates}</Item>
+        <Item>Calories: {nutrients.calories}</Item>
+        <Item>Protein: {nutrients.protein}</Item>
+        <Item>Carbohydrates: {nutrients.carbohydrates}</Item>
+        <Item>Fat: {nutrients.fat}</Item>
       </List>
       <Wrapper>
         {meals.map((meal) => (

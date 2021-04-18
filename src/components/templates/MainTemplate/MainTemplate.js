@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navigation from '../../organism/Navigation/Navigation';
 import { Wrapper } from './MainTemplate.style';
+import NavigationMenu from '../../organism/NavigationMenu/NavigationMenu';
 
 const MainTemplate = ({ children }) => {
   return (
     <Wrapper>
-      <Navigation />
+      <NavigationMenu />
       {children}
     </Wrapper>
   );

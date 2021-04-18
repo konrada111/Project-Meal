@@ -6,8 +6,20 @@ export const Wrapper = styled.nav`
   margin-top: 15px;
 `;
 
-export const StyledLink = styled(NavLink)`
+const activeClassName = 'active-link';
+
+export const StyledLink = styled(NavLink).attrs({ activeClassName })`
   text-decoration: none;
   color: #282c34;
   padding: 40px;
+
+  &.active-link::after {
+    content: '';
+    height: 1px;
+    width: 20px;
+    background-color: ${({ theme }) => theme.colors.darkGrey};
+    transform: translateX(-200%);
+    position: absolute;
+    top: 100%;
+  }
 `;

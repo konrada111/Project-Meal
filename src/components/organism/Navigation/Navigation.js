@@ -5,8 +5,10 @@ import { StyledLink, Wrapper, Navbar } from './Navigation.style';
 const Navigation = () => {
   return (
     <Wrapper>
-      <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/meal-plan/">Meal Plan</StyledLink>
+      <StyledLink exact to="/">
+        Home
+      </StyledLink>
+      <StyledLink to="/meal-plan">Meal Plan</StyledLink>
     </Wrapper>
   );
 };

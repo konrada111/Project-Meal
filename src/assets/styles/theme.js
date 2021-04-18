@@ -11,6 +11,10 @@ export const theme = {
     darkPurple: '#C0C7D6',
     lightPurple: '#ECEFF7',
     orange: '#F7A800',
+    babyBlue: '#79A9D1',
+    navColor: '#008000',
+    buttonColor: '#008000',
+    transparent: 'transparent',
   },
   fontSize: {
     xl: '24px',

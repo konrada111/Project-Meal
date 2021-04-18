@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 export const Header = styled.h1`
   max-width: 1062px;
   height: 304px;
-  font-size: 114px;
+  font-size: 90px;
   grid-row-start: 2;
   grid-column-start: 2;
   color: ${({ theme }) => theme.colors.darkGrey};

@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const List = styled.ul`
+  margin: 30px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -14,4 +15,5 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   padding: 30px;
+  font-size: 20px;
 `;

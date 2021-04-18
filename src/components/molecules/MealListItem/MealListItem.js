@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Wrapper, RecipeLink, Image } from './MealListItem.style';
+import { Wrapper, RecipeLink, Image, Title } from './MealListItem.style';
 
 const MealListItem = ({ meal: { title, servings, sourceUrl, id } }) => {
   const [imageUrl, setImageUrl] = useState('');
@@ -18,10 +18,10 @@ const MealListItem = ({ meal: { title, servings, sourceUrl, id } }) => {
         console.log(error);
       });
   }, [id]);
+
   return (
     <Wrapper>
-      <h2>{title}</h2>
-      <p>Servings: {servings}</p>
+      <Title>{title}</Title>
       <Image src={imageUrl} />
       <RecipeLink target="_blank" href={sourceUrl}>
         Go to Recipe
